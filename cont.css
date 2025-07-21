@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=poppins:wght@200;300;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+.btn-outline-secondary{
+    background-color: transparent !important;
+    border-color: #011627 !important;
+    color: #011627;
+    border-radius: 0;
+    position: relative;
+}
+
+.btn-outline-secondary:before{
+    content: '';
+    position: absolute;
+    background-color: #83f3ed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.btn-outline-secondary:hover::before{
+    width: 100%;
+}
+
+.navbar{
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    height: 80px;
+}
+
+.nav-link,
+.navbar-brand{
+    color: #011627;
+}
+
+.nav-link:hover,
+.navbar-brand:hover{
+    color: #777;
+}
+
+.navbar-brand{
+    font-size: 1.8rem;
+}
+
+.contact{
+    position: relative;
+    min-height: 140vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(../photo/bg.webp);
+    background-size: cover;
+}
+
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact .content h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.contact .content p{
+    font-weight: 500;
+    color: #fff;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.container .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .contactInfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.container .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.container .contactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.container .contactInfo .box .text h3{
+    font-weight: 500;
+    color: #00bcd4;
+}
+
+.contactForm{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+}
+
+.contactForm h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border-bottom: 2px solid #333;
+    outline: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+}
+
